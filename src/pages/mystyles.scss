@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+// If need, change your variables before importing Bulma
+// $title-color: #ff0000;
+
+.background-hero {
+  background-image: url("/img/home-jumbotron.jpg");
+}
+
+@import "~bulma/bulma.sass";

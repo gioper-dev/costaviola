@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.bottom-panel-container {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 9999; /* Set a high z-index value */
+  max-height: 30%;
+  overflow-y: auto;
+}
+
+.has-overlay {
+  background-color: rgba(255, 255, 255); /* Semi-transparent overlay */
+}
+
+@import "~bulma/bulma.sass";
