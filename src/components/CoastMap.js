@@ -40,11 +40,12 @@ const CoastMap = () => {
   }
 
   const markers = data.allMdx.nodes.map((poi) =>
-    <Marker position={poi.frontmatter.coordinates} key={poi.frontmatter.name} eventHandlers={{ click: () => openPanel(poi) }}>
-      {/* <Popup>
-        <h3 className="title is-5">{poi.name}</h3>
-        <p>ciao ciao ciao</p>
-      </Popup> */}
+    //eventHandlers={{ click: () => openPanel(poi) }
+    <Marker position={poi.frontmatter.coordinates} key={poi.frontmatter.name}>
+      <Popup>
+        <h3 className="title is-5">{poi.frontmatter.name}</h3>
+        <p>Coordinate: {poi.frontmatter.coordinates[0]},{poi.frontmatter.coordinates[1]}</p>
+      </Popup>
     </Marker>
   );
 
