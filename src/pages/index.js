@@ -1,6 +1,7 @@
 import React from "react"
 import "./mystyles.scss"
 import Layout from "../components/layout"
+import ImageMap from "../images/costa_viola_map_2.png" 
 
 const IndexPage = () => {
   return (
@@ -17,13 +18,21 @@ const IndexPage = () => {
       </section>      
       <section className="section">
         <h2 className="title is-2">Context</h2>
-        <p className="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
-          deserunt mollit anim id est laborum.</p>        
+          <div class="columns">
+            <div class="column">
+                <p className="content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+              deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="column">
+              <img src={ImageMap} alt="costa viola" />          
+            </div>
+          </div>
       </section>
       <section className="section">
         <div className="columns">

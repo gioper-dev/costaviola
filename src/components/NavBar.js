@@ -40,6 +40,11 @@ const Navbar = () => {
                 Map
               </Link>
             </li>
+            <li className="navbar-item" style={{padding: "0px"}}>
+              <Link className="navbar-item" to="/mappoly">
+                MapPoly
+              </Link>
+            </li>            
         </ul>
     </nav>
   );
